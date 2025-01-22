@@ -1,0 +1,427 @@
+* {
+    color: black;
+}
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.navbar {
+    max-width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.logo h1 {
+    margin-top: .7rem;
+    font-size: 1.4rem;
+}
+
+.nav-item {
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+
+}
+.navbar li a{
+    text-decoration: none;
+}
+
+.button{
+    background-color: orange;
+    padding: 1rem 4rem 1.5rem 4rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.bar{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    .navbar ul, .logo h1, .button {
+        display: none;
+   }
+   .bar{
+    display: block;
+   }
+   .bar:hover{
+    background-color:grey;
+   }
+  }
+  
+
+/* banner section */
+
+marquee{
+    background-color: rgb(103, 202, 241);
+    font-weight: 600;
+    margin-top: .3rem;
+    padding:1rem 0 1rem 0;
+}
+.banner {
+    max-width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+}
+
+.banner-container {
+    width: 50%;
+    margin: 3rem 0 0 3rem;
+}
+
+.banner-container p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0;
+
+}
+
+.banner-button {
+    background-color: black;
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 576px) {
+
+    .banner{
+         flex-direction: column-reverse;
+         padding: 0;
+        }
+        .banner-container{
+            width: 90%;
+            text-align: center;
+            margin-left: 1rem;
+        }
+        .banner-title{
+        font-size: 2.5rem;
+
+    }    
+}
+
+/* curriculumn section */
+
+
+#curriculumn {
+    background-image: url(assets/bg.png);
+}
+
+.curriculumn {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.curriculumn h1 {
+    text-align: center;
+    padding: 2.5%;
+    font-size: 2.5rem;
+}
+
+.curriculumn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.curriculumn-container p {
+    color: rgb(117, 117, 117);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 4%;
+}
+
+.curriculumn-card1,
+.curriculumn-card2,
+.curriculumn-card3 {
+    background-color: aquamarine;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 5%;
+}
+
+.curriculumn-card1 {
+    background-image: linear-gradient(rgb(231, 248, 252), white);
+}
+
+.curriculumn-card2 {
+    background-image: linear-gradient(rgb(245, 241, 158), white);
+}
+
+.curriculumn-card3 {
+    background-image: linear-gradient(rgb(231, 209, 248), white);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 4%;
+
+}
+
+.curriculumn-container a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.arrow {
+    justify-content: center;
+    margin: 1.5rem;
+
+}
+
+.lt,
+.gt {
+    background-color: orange;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: .5rem;
+    margin: 0 .5rem 0 .5rem;
+    color: white;
+    width: 3.5%;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 576px) {
+    .curriculumn{
+    max-width: 100%;
+    margin: 0 auto;
+    }
+        
+    .curriculumn-container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    
+}
+.arrow{
+    display: none;
+}
+}
+
+
+/* Story */
+#story {
+    background: url("./assets/bg.png"),
+        linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+#story h1{
+    padding-bottom: 1rem;
+}
+
+.story-heading {
+    text-align: center;
+    padding: 4%;
+    font-size: 3rem;
+}
+
+.story {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.large-card {
+    margin-right: 2%;
+    background-color: white;
+    border-radius: 12px;
+    width: 50%;
+
+}
+
+.large-card img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.large-card h1,
+p {
+    padding: 0 5% 0 5%;
+    margin: 2rem 0 2rem 0;
+}
+.z{
+    position: relative;
+}
+.date{
+    background-color: rgb(8, 162, 8);
+    text-align: center;
+    width: 50%;
+    border-radius: 12px;
+    margin-left: 20%;
+}
+.date-b{
+    top: -1.5rem;
+    padding: .5rem;
+}
+.date-s{
+    background-color: rgb(8, 162, 8);
+    top: -1.2rem;
+    text-align: center;
+    border-radius: 12px;
+    width: 50%;
+    margin-left:20% ;
+    padding: .5rem;
+}
+
+.small-card {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.small-card h2 {
+    font-size: 1rem;
+    padding: 0 8% 0 8%;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.small-card img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+.sc1,
+.sc2,
+.sc3,
+.sc4 {
+    border-radius: 12px;
+    background-color: white;
+    margin: 1rem;
+
+}
+
+.btn {
+    text-align: center;
+    padding: 3rem;
+    border-radius: 12px;
+}
+
+.story-btn {
+    background-color: black;
+    padding: 1rem 4rem 1rem 4rem;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 576px) {
+    #story{
+        width: 100%;
+        margin: 0;
+    }
+    .large-card{display: none;}
+
+.date-s{
+width: 80%;
+font-size: 1rem;
+right:1.8rem;
+}
+.story-btn{
+    padding: 1rem 3rem 1rem 3rem;
+}}
+
+
+
+/* footer section */
+
+#footer {
+    margin-top: 2em;
+    background-color: rgb(62, 172, 216);
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.f-logo {
+    width: 33.3%;
+}
+
+.f-logo p {
+    padding: 0;
+}
+
+.about {
+    width: 33.3%;
+    text-align: center;
+
+}
+
+.about ul {
+    padding: 0;
+
+}
+
+.about ul li {
+    list-style: none;
+    padding: .5rem;
+    color: white;
+}
+
+.contact {
+    width: 33.3%;
+}
+
+@media screen and (max-width: 576px) {
+    .footer{
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+    }
+    .f-logo{
+        width: 100%;
+        height: 50%;
+    }
+    .f-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .about h3{
+        padding-left: 0;
+        text-align: left;
+        font-size: 1.5rem;
+
+    }
+    .about ul li {
+        padding-bottom: .5rem;
+        text-align: left;
+
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact h2{
+        width: 100%;
+    }
+}

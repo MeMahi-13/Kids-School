@@ -193,6 +193,7 @@ marquee{
 
 }
 
+
 .lt,
 .gt {
     background-color: orange;
@@ -205,6 +206,10 @@ marquee{
     width: 3.5%;
     text-align: center;
 
+}
+.lt:hover, .gt:hover{
+    color: orange;
+    background-color: skyblue;
 }
 
 @media screen and (max-width: 576px) {
@@ -421,7 +426,5 @@ right:1.8rem;
     .contact{
         width: 100%;
     }
-    .contact h2{
-        width: 100%;
-    }
+    
 }
